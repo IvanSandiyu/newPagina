@@ -11,6 +11,7 @@ img {
 
 h1,
 h2,
+h3,
 p{
     color: rgb(139, 152, 177);
 }
@@ -65,7 +66,7 @@ nav a {
 .conocimientos {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 23%;
    
   }
 
@@ -137,6 +138,17 @@ nav a {
     margin-left: 50px;
     
   }
+  .imagen-proyecto-asp{
+    display: flex;
+    flex-direction: row; /* Apila las imágenes verticalmente */
+    margin-left: -80px;
+  }
+  .imagen-proyecto-asp img{
+    width: 120px;
+    height: auto;
+    margin-right: 0px; /* Espacio entre imágenes */
+    
+  }
   .imagen-proyecto-java{
     margin-left: 100px;
   }
@@ -164,7 +176,44 @@ nav a {
   .contenido p {
     margin-bottom: 10px; /* Espacio entre la descripción y el botón */
   }
-  
+ 
+  .contenedor-contacto {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Alinear texto al centro */
+    margin-top: 15%;
+  }
+  .contacto{
+    width: 70%; /* Establece el ancho del div contacto */
+    margin-bottom: 20px;
+  }
+  .contacto p{
+    text-align: center;
+  }
+  .imagenes-contacto {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: center; /* Centrar horizontalmente */
+  }
+  .imagenes-contacto img {
+    margin: 20px; /* Espacio entre las imágenes */
+    width: 100px;
+  }
+  .texto-conocimiento{
+    text-align: center; /* Alinear el texto al centro */
+    font-size: 24px; /* Tamaño del texto */
+    margin-bottom: -20%; /* Espacio debajo del título */
+    margin-top: 30%;
+  }
+
+  .texto-proyecto {
+    text-align: center; /* Alinear el texto al centro */
+    font-size: 24px; /* Tamaño del texto */
+    margin-bottom: -5%; /* Espacio debajo del título */
+    margin-top: 30%;
+   
+  }
 
 @keyframes flotar {
     0% {

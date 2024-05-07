@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+
+html {
+    font-family: "philosopher";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+    width: 100px;
+    animation: flotar 2s infinite alternate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1,
+h2,
+p{
+    color: rgb(139, 152, 177);
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor h1{
+    margin-left: 30px;
+}
+nav {
+
+    margin-left: auto;
+
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(139, 152, 177);
+}
+
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtitulo h2{
+    margin: 1px;
+    line-height: 1;
+}
+
+.imagen {
+    display: flex;
+    margin-top: 10%;
+    
+}
+
+
+.conocimientos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+   
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .columna {
+    width: 20%; /* Para que cada columna ocupe el 20% del ancho del contenedor */
+    padding: 10px; /* Espacio entre las columnas */
+    box-sizing: border-box; /* Para incluir el padding en el ancho */
+    text-align: center; /* Centra el contenido horizontalmente */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .columna img {
+    width: 40%; /* Para que la imagen ocupe todo el ancho de la columna */
+    height: auto; /* Para mantener la proporción de la imagen */
   }
-}
+  
+  .columna p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+ 
+  .proyectos {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 150px;
+  }
+  
+  .contenedor-proyecto {
+    display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  max-width: 800px; /* Ajusta según sea necesario */
+  margin-bottom: 20px; /* Espacio entre proyectos */
+    /* display: flex;
+    align-items: center; 
+   */
+    margin-bottom: 20px; /* Espacio entre proyectos */
+  }
+  
+  .imagen-proyecto {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+
+  }
+  
+  .imagen-proyecto , #htmlCssJs {
+    width: 300px;
+    height: auto;
+  }
+
+  .contenedor-proyecto {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin-bottom: 100px; /* Espacio entre proyectos */
+  }
+  .imagen-proyecto-crud {
+    display: flex;
+    flex-direction: row; /* Apila las imágenes verticalmente */
+    margin-left: -150px;
+  }
+  .imagen-proyecto-crud img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px; /* Espacio entre imágenes */
+  }
+  
+  .contenido-crud{
+    flex:1;
+    margin-left: 50px;
+    
+  }
+  .imagen-proyecto-java{
+    margin-left: 100px;
+  }
+  .imagen-proyecto-java img {
+   width: 200px;
+   height: auto;
+   
+  }
+
+  .imagen-proyecto-csharp{
+    margin-left: 100px;
+  }
+  .imagen-proyecto-csharp img{
+    width: 200px;
+    height: auto;
+  }
+  .contenido {
+    margin-left: 100px; /* Espacio entre la imagen y el contenido */
+  }
+  
+  .contenido h1 {
+    margin: 0; /* Elimina el margen superior e inferior del h1 */
+  }
+  
+  .contenido p {
+    margin-bottom: 10px; /* Espacio entre la descripción y el botón */
+  }
+  
+
+@keyframes flotar {
+    0% {
+      transform: translateY(0); /* Comienza sin desplazamiento vertical */
+    }
+    100% {
+      transform: translateY(-10px); /* Desplaza la imagen hacia arriba */
+    }
+  }

@@ -101,32 +101,33 @@ function index(){
           </div>
         </div>
 
-        <p className='texto-conocimiento' id='conocimientos'>Conocimientos</p>
+        <p className='texto-conocimiento' id='conocimientos'>Conocimientos   </p>
+        
         <div className="conocimientos" >
-          <div class="columna">
+          <div className="columna">
             <img src={csharp} alt="Imagen 1" id="imagen" />
-            <p></p>
           </div>
-          <div class="columna">
+
+          <div className="columna">
             <img src={java} alt="Imagen 2" id="imagen" />
-            <p></p>
+            
           </div>
-          <div class="columna">
+          <div className="columna">
             <img src={js} alt="Imagen 3" id="imagen" />
-            <p></p>
+            
           </div>
-          <div class="columna">
+          <div className="columna">
             <img src={react} alt="Imagen 4" id="imagen" />
-            <p></p>
+            
           </div>
-          <div class="columna">
+          <div className="columna">
             <img src={sql} alt="Imagen 5" id="imagen" />
-            <p></p>
+            
           </div>
         </div>
 
 
-        <p className='texto-proyecto' id='proyecto-inicio'>Proyectos</p>
+        <p className='texto-proyecto' id='proyecto-inicio'>Proyectos </p>
         <div className="proyectos" >
           <div className="contenedor-proyecto">
             <div className="imagen-proyecto">

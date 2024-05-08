@@ -202,14 +202,18 @@ nav a {
     margin: 20px; /* Espacio entre las imágenes */
     width: 100px;
   }
-  .texto-conocimiento{
+  .texto-conocimiento , .texto-proyecto{
+    word-spacing: 100px;
     text-align: center; /* Alinear el texto al centro */
     font-size: 24px; /* Tamaño del texto */
     margin-bottom: -20%; /* Espacio debajo del título */
     margin-top: 30%;
+    animation: loop 10s linear infinite ;
+    
   }
 
   .texto-proyecto {
+    
     text-align: center; /* Alinear el texto al centro */
     font-size: 24px; /* Tamaño del texto */
     margin-bottom: -5%; /* Espacio debajo del título */
@@ -228,3 +232,13 @@ nav a {
       transform: translateY(-10px); /* Desplaza la imagen hacia arriba */
     }
   }
+  @keyframes loop {
+    0%{
+      transform: translateX(50%);
+    }
+    
+    100%{
+      transform: translateX(-55%);
+    }
+  }
+ 

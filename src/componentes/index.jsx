@@ -18,6 +18,8 @@ import linkedin from '../imagenes/linkedin.svg';
 import git from '../imagenes/git.png';
 import gmail from '../imagenes/gmail.svg';
 import maletin from '../imagenes/maletin.svg';
+import flecha from '../imagenes/flecha2.png';
+
 
 
 const abrirGithub = () => {
@@ -228,6 +230,12 @@ function index(){
 
           </div>
 
+        </div>
+
+        <div className='contenedor-volver' >
+          <a href='#inicio'>
+          <img src={flecha} ></img>
+          </a>
         </div>
       </div> 
     

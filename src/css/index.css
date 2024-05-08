@@ -208,7 +208,7 @@ nav a {
     font-size: 24px; /* Tamaño del texto */
     margin-bottom: -20%; /* Espacio debajo del título */
     margin-top: 30%;
-    animation: loop 10s linear infinite ;
+    /* animation: loop 10s linear infinite ; */
     
   }
 
@@ -232,7 +232,7 @@ nav a {
       transform: translateY(-10px); /* Desplaza la imagen hacia arriba */
     }
   }
-  @keyframes loop {
+  /* @keyframes loop {
     0%{
       transform: translateX(50%);
     }
@@ -240,5 +240,5 @@ nav a {
     100%{
       transform: translateX(-55%);
     }
-  }
+  } */
  

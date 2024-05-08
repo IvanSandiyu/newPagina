@@ -45,6 +45,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items:flex-end;
+    margin-top: 10%;
     
 }
 
@@ -68,7 +69,7 @@ nav a {
 .conocimientos {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 23%;
+    margin-top: 25%;
    
   }
 
@@ -84,11 +85,7 @@ nav a {
     height: auto; /* Para mantener la proporción de la imagen */
   }
   
-  .columna p {
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
-  }
-
- 
+   
   .proyectos {
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
@@ -100,9 +97,7 @@ nav a {
   grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
   max-width: 800px; /* Ajusta según sea necesario */
   margin-bottom: 20px; /* Espacio entre proyectos */
-    /* display: flex;
-    align-items: center; 
-   */
+   
     margin-bottom: 20px; /* Espacio entre proyectos */
   }
   
@@ -202,12 +197,12 @@ nav a {
     margin: 20px; /* Espacio entre las imágenes */
     width: 100px;
   }
-  .texto-conocimiento , .texto-proyecto{
+  .texto-conocimiento {
     word-spacing: 100px;
     text-align: center; /* Alinear el texto al centro */
     font-size: 24px; /* Tamaño del texto */
     margin-bottom: -20%; /* Espacio debajo del título */
-    margin-top: 30%;
+    margin-top: 31%;
     /* animation: loop 10s linear infinite ; */
     
   }
@@ -232,6 +227,110 @@ nav a {
       transform: translateY(-10px); /* Desplaza la imagen hacia arriba */
     }
   }
+
+@media screen and (max-width:915px) {
+  .contenedor {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    padding: 20px; /* Añade espacio interno para mejor legibilidad */
+  }
+  
+
+  nav {
+    margin-left: 0; /* Elimina el margen izquierdo */
+  }
+
+  nav a {
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-top: 20px; /* Añade espacio entre los enlaces */
+    padding: 10px;
+  }
+ 
+  
+  .columna img {
+    width: 120%; /* Para que la imagen ocupe todo el ancho de la columna */
+    height: auto; /* Para mantener la proporción de la imagen */
+  }
+  .proyectos {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 150px;
+  }
+  
+  .contenedor-proyecto {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin-bottom: 20px; /* Espacio entre proyectos */
+    
+  }
+  
+  .imagen-proyecto {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-left: 50px;
+  }
+  
+  .imagen-proyecto img {
+    width: 300px;
+    height: auto;
+    align-items: center;
+  }
+  
+  .contenido {
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin-bottom: 100px; /* Espacio entre proyectos */
+  }
+
+  .imagen-proyecto-crud {
+    display: flex;
+    flex-direction: row; /* Apila las imágenes verticalmente */
+    margin-left: 60px;
+  }
+  .imagen-proyecto-crud img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px; /* Espacio entre imágenes */
+  }
+  
+  .contenido-crud{
+    flex:1;
+    margin-left: 100px;    
+  }
+
+  .imagen-proyecto-asp{
+    display: flex;
+    flex-direction: row; /* Apila las imágenes verticalmente */
+    margin-left: 50px;
+  }
+  .imagen-proyecto-asp img{
+    width: 130px;
+    height: auto;
+    margin-right: 0px; /* Espacio entre imágenes */
+    
+  }
+  .imagen-proyecto-java{
+    margin-left: 60px;
+  }
+  .imagen-proyecto-java img {
+   width: 200px;
+   height: auto;
+   
+  }
+
+  .imagen-proyecto-csharp{
+    margin-left: 100px;
+  }
+  .imagen-proyecto-csharp img{
+    width: 200px;
+    height: auto;
+  }
+  
+  
+}
+
+
+
   /* @keyframes loop {
     0%{
       transform: translateX(50%);

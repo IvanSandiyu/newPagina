@@ -226,6 +226,41 @@ nav a {
   .contenedor-volver img{
     width: 50px;
   }
+  
+  button {
+  background-color:transparent;
+  color:rgb(139, 152, 177);
+  border:none;
+  position:relative;
+  font-size: 15px;
+  padding:2px;
+  cursor:pointer;
+  transition:800ms ease all;
+  }
+  button:hover{
+    background-color:rgb(186, 170, 230);
+    color:white;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: black;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
  
 @keyframes flotar {
     0% {

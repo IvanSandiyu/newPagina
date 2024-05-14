@@ -54,7 +54,7 @@ const abrirGithub5 = () => {
 }
 const abrirGithub6 = () => {
   const enlaceTemporal = document.createElement("a");
-  enlaceTemporal.href = 'https://portafolioivansandiyu.vercel.app/';
+  enlaceTemporal.href = 'https://github.com/IvanSandiyu/Alta.Baja.Mesa';
   enlaceTemporal.target = "_blank";
   enlaceTemporal.click();
 }
@@ -66,7 +66,7 @@ const abrirGit = () => {
 };
 const abrirLinkedin = () => {
   const enlaceTemporal = document.createElement("a");
-  enlaceTemporal.href = "https://github.com/IvanSandiyu/Alta.Baja.Mesa";
+  enlaceTemporal.href = "https://www.linkedin.com/in/ivansandiyu/";
   enlaceTemporal.target = "_blank";
   enlaceTemporal.click();
 };

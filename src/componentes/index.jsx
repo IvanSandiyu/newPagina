@@ -58,6 +58,12 @@ const abrirGithub6 = () => {
   enlaceTemporal.target = "_blank";
   enlaceTemporal.click();
 }
+const abrirGithub7 = () => {
+  const enlaceTemporal = document.createElement("a");
+  enlaceTemporal.href = 'https://github.com/IvanSandiyu/MisionEspacial';
+  enlaceTemporal.target = "_blank";
+  enlaceTemporal.click();
+}
 const abrirGit = () => {
   const enlaceTemporal = document.createElement("a");
   enlaceTemporal.href = "https://github.com/IvanSandiyu";
@@ -139,6 +145,23 @@ function index(){
               <h1>Portafolio primer version</h1>
               <p >Primer portafolio realizado con HTML-CSS-JAVASCRIPT</p>
               <button onClick={abrirGithub}>Ver mas</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="proyectos">
+
+          <div className="contenedor-proyecto">
+            <div className="imagen-proyecto-mision">
+              <img src={java} alt="Imagen del proyecto" />
+              <img src={postgres} alt="Imagen del proyecto" />
+              
+            </div>
+            <div className="contenido-mision">
+              <h1>Sistema API REST solo Backend</h1>
+              <p>Java - PostgreSQL</p>
+              <button onClick={abrirGithub7}>Ver mas</button>
+
             </div>
           </div>
         </div>

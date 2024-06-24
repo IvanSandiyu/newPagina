@@ -135,6 +135,11 @@ nav a {
     margin-left: 50px;
     
   }
+  .contenido-mision{
+    margin-right: -100px;
+    
+
+  }
   .imagen-proyecto-asp{
     display: flex;
     flex-direction: row; /* Apila las imágenes verticalmente */
@@ -162,6 +167,15 @@ nav a {
     width: 200px;
     height: auto;
   }
+  .imagen-proyecto-mision img{
+    
+    width: 120px;
+    height: auto;
+    margin-right: 71px; /* Espacio entre imágenes */
+    
+
+  }
+  
   .contenido {
     margin-left: 100px; /* Espacio entre la imagen y el contenido */
   }
